@@ -1,0 +1,39 @@
+{% extends 'main_app/base.html' %} 
+{% load static %} 
+{% block content %}
+
+<section class="container text-center">
+  <h3>Choose which website to track</h3>
+
+  <hr> <br>
+  <div class="row">
+    <div class="col-md-6">
+      <a href="{% url 'amazon' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'amazon.svg' %}" alt="Amazon logo">
+          <div class="card-body">
+            <h5 class="card-title ">
+            Amazon
+            </h5>
+            Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-6">
+      <a href="{% url 'flipkart' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'flipkart.svg' %}" alt="Flipkart logo">
+          <div class="card-body">
+            <h5 class="card-title ">
+            Flipkart
+            </h5>
+            Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!
+          </div>
+        </div>
+      </a>
+    </div>
+  
+</section>
+{% endblock content %}
